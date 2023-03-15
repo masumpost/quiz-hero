@@ -10,7 +10,6 @@ let rulesContainer = document.querySelector("#rulesContainer");
 let alertContainer = document.querySelector("#alertContainer");
 let submitContainer = document.querySelector("#submitContainer");
 let quizContainer = document.querySelector("#quizContainer");
-console.log(quizContainer);
 let answersContainer = document.querySelector("#answersContainer");
 let displayResult = document.querySelector("#displayResult");
 
@@ -75,8 +74,9 @@ const displayQuiz = (data) => {
 };
 
 // EventListener for quiz submit button
-document.querySelector("#submit").addEventlistener("click", () => {
-  if (answers.length < 6) {
+document.querySelector("#submit").addEventListener("click", () => {
+  console.log('clicked');
+if (answers.length < 6) {
     return;
   }
   quizTimer(true);
