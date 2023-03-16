@@ -5,8 +5,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Question and Answer</title>
+    <!-- tailwind cdn link -->
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
+<body class="mx-2 md:mx-4 lg:mx-4">
+    <h1 class="font-bold text-center text-3xl my-4">Answering The Question</h1>
+
+    <section>
+        <h3 class="text-2xl font-semibold p-3">1. what is the difference between map(), filter(), forEach(), find() ? </h3>
+        <p><span class="font-semibold">Answer:</span> 
+        map- map() creates a new array from calling a function for every array element.it calls a function once for each element in an array.it does not execute the function for empty elements.it does not change the original array.</p>
+        <p>forEach: The forEach() method calls a function for each element in an array.This method is not executed for empty elements.</p>
+        <p>So we can call that map() and forEach() are similar but map must return an array and forEach don't return anything.</p>
+        <p>filter(): it contains an condition. If the condition is true then it shows all the matching value.</p>
+        <p>find(): It also contains a condition . If the condition is true then it shows only the first matching one.</p>
+        <p>So, we can call that filter and find method are almost same. The difference is filter shows all of matching and find shows first matching one.</p>
+
+    </section>
     
 </body>
 </html>
