@@ -182,3 +182,9 @@ if (answers.length < 6) {
   }, 1500);
   window.scrollTo(0, 0);
 });
+
+// blog button section 
+
+document.getElementById('blog-btn').addEventListener('click', () =>{
+  window.location.href = "blog.html";
+})
